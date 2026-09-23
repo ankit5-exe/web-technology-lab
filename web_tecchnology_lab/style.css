@@ -1,0 +1,21 @@
+*{
+
+    background-color: #cff1f6;
+    color: #264123;
+}
+img{
+margin: auto;
+display:block;
+border-radius: 50%;
+object-fit: cover;
+
+}
+table{
+    background: #ebb5b5;
+    border : 0px;
+    border-collapse: collapse;
+    border:black;
+}
+h1{
+    color: rgb(99, 86, 68);
+}
