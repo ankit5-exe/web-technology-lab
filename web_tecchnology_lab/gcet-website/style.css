@@ -1,0 +1,164 @@
+/* GCET Jammu - the ONE stylesheet used by every page */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+a { color: #234f70; }
+
+/* ---------- Header and navigation ---------- */
+header {
+  background-color: #234f70;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  text-decoration: none;
+}
+.brand img { width: 64px; height: 64px; border-radius: 50%; background: white; }
+.brand h1 { font-size: 1.5rem; margin: 0; text-align: left; }
+header p { margin: 6px 0 0; }
+
+nav {
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+nav a:hover { background-color: #555; }
+nav a.active { background-color: #234f70; }
+
+/* ---------- Page layout ---------- */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+h2 { color: #234f70; }
+.college-image { display: block; width: 60%; margin: 15px auto; }
+
+.box {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.box h3 { margin-top: 0; color: #234f70; }
+
+/* Vision / Mission cards on the About page */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* ---------- Faculty ---------- */
+.faculty { display: flex; flex-wrap: wrap; gap: 15px; }
+.faculty-box {
+  width: 230px;
+  border: 1px solid #aaa;
+  padding: 15px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.faculty-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #234f70;
+}
+.faculty-box h3 { margin: 10px 0 5px; color: #234f70; }
+.faculty-box p { margin: 3px 0; font-size: 0.95rem; }
+
+/* ---------- Tables ---------- */
+table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+th, td { border: 1px solid #555; padding: 10px; text-align: left; }
+th { background-color: #234f70; color: white; }
+.center th, .center td { text-align: center; }
+.break { writing-mode: vertical-rl; text-align: center; background: #e6e6e6; font-weight: bold; letter-spacing: 4px; }
+.table-scroll { overflow-x: auto; }
+
+/* ---------- Gallery ---------- */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.gallery figcaption { text-align: center; font-size: 0.9rem; padding-top: 4px; }
+
+/* ---------- Forms ---------- */
+form { width: 70%; }
+label { display: block; margin-top: 12px; }
+fieldset { margin-top: 14px; padding: 10px; border: 1px solid #aaa; }
+fieldset label { display: inline-block; margin: 0 14px 0 0; }
+input[type="text"], input[type="email"], input[type="date"],
+input[type="tel"], input[type="password"], select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font: inherit;
+}
+button {
+  padding: 9px 20px;
+  margin: 18px 6px 0 0;
+  background-color: #234f70;
+  color: white;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+button:hover { background-color: #333; }
+button.reset { background-color: #888; }
+
+/* Sign in page */
+.login-box {
+  width: 350px;
+  max-width: 92%;
+  margin: 50px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 25px;
+}
+.login-box h2 { text-align: center; margin-top: 0; }
+.login-box form { width: 100%; }
+.login-box button { width: 100%; margin: 20px 0 0; }
+
+.thanks { text-align: center; padding: 40px 10px; }
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+footer p { margin: 3px 0; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  nav { flex-direction: column; }
+  .brand h1 { font-size: 1.1rem; }
+  .college-image { width: 100%; }
+  .cards { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr; }
+  form { width: 100%; }
+}

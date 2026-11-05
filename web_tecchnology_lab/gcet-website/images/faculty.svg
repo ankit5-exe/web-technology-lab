@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+<rect width="400" height="250" fill="#f6e4e1"/>
+<circle cx="200" cy="82" r="42" fill="#7a1428"/>
+<path d="M115 220 Q115 140 200 140 Q285 140 285 220 Z" fill="#7a1428"/>
+<text x="200" y="240" text-anchor="middle" font-family="Arial" font-size="18" fill="#333">Faculty Member</text>
+</svg>
