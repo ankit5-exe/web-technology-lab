@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Shop<span>Ease</span></a>
+    <form class="search-bar" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+      <button type="button" id="searchBtn">Search</button>
+    </form>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">New Season Sale</p>
+      <h1>Everything you love,<br>delivered to your door</h1>
+      <p>Discover electronics, fashion, home essentials and more at prices that make you smile.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-art">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="categories">
+      <a href="products.html?cat=Electronics" class="cat c1">Electronics</a>
+      <a href="products.html?cat=Fashion" class="cat c2">Fashion</a>
+      <a href="products.html?cat=Home" class="cat c3">Home</a>
+      <a href="products.html?cat=Beauty" class="cat c4">Beauty</a>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-grid" id="featuredGrid"</div>
+  </section>
+
+  <section class="features">
+    <div class="feature"><h3>Free Delivery</h3><p>On all orders above Rs. 499</p></div>
+    <div class="feature"><h3>Secure Payments</h3><p>100 percent safe and encrypted</p></div>
+    <div class="feature"><h3>Easy Returns</h3><p>7 day hassle free returns</p></div>
+    <div class="feature"><h3>24x7 Support</h3><p>We are always here to help</p></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
