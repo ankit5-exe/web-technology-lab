@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Shop<span>Ease</span></a>
+    <form class="search-bar" onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+      <button type="button" id="searchBtn">Search</button>
+    </form>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cartCount" class="badge">0</span></a>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>Questions, feedback or need help? We would love to hear from you.</p>
+  </section>
+
+  <main class="container contact-layout">
+    <form id="contactForm" class="contact-form" novalidate>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your name">
+      <small class="error" id="nameErr"></small>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com">
+      <small class="error" id="emailErr"></small>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+      <small class="error" id="messageErr"></small>
+
+      <button type="submit" class="btn full">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <div class="info-card"><h3>Address</h3><p>ShopEase HQ, Jammu, Jammu and Kashmir, India</p></div>
+      <div class="info-card"><h3>Email</h3><p>support@shopease.com</p></div>
+      <div class="info-card"><h3>Phone</h3><p>+91 98765 43210</p></div>
+      <div class="info-card"><h3>Working Hours</h3><p>Monday to Saturday, 9 AM to 7 PM</p></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
